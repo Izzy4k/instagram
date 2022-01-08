@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="4dp"
+    tools:context=".Fragment.ChatFragment">
+
+    <EditText
+        android:id="@+id/edit_search_direct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:background="@drawable/shape_edit_direct"
+        android:drawableStart="@drawable/ic_search_icon"
+        android:drawablePadding="9dp"
+        android:hint="Search"
+        android:padding="6dp"
+        android:textColorHint="#803C3C43" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="7dp"
+        android:id="@+id/rv_chat_direct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_search_direct"
+        android:orientation="vertical"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/item_chat_direct" />
+</RelativeLayout>

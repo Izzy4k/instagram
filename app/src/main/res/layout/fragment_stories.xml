@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#222"
+    tools:context=".Fragment.StoriesFragment">
+
+    <ImageView
+        android:id="@+id/stories_main_photo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/container_edit" />
+
+    <ImageView
+
+        android:id="@+id/hrest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/stories_profile"
+        android:layout_alignBottom="@id/stories_profile"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="12dp"
+        android:src="@drawable/ic_xerist" />
+
+    <RelativeLayout
+        android:id="@+id/layout_back"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:layout_below="@id/stories_profile" />
+
+    <RelativeLayout
+        android:id="@+id/layout_next"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:layout_below="@id/stories_profile"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:id="@+id/stories_profile"
+        android:layout_width="33dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/ic_user_profile" />
+
+    <TextView
+        android:id="@+id/txt_nick_stories"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/stories_profile"
+        android:layout_alignBottom="@id/stories_profile"
+        android:layout_marginLeft="12dp"
+        android:layout_toRightOf="@id/stories_profile"
+        android:gravity="center"
+        android:text="Nick"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+    <RelativeLayout
+        android:id="@+id/container_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="12dp">
+
+        <EditText
+            android:id="@+id/edit_comment_stories"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_toLeftOf="@id/image_direct_stories"
+            android:background="@drawable/bg_stoies_edit"
+            android:hint="Отправьте сообщение"
+            android:padding="12dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
+
+        <ImageView
+            android:id="@+id/image_direct_stories"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/edit_comment_stories"
+            android:layout_alignBottom="@id/edit_comment_stories"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="6dp"
+            android:src="@drawable/ic_direct_stories" />
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/timer"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:max="100" />
+
+
+</RelativeLayout>

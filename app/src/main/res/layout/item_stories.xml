@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <RelativeLayout
+        android:id="@+id/stories_add_container"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/image_stories_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:src="@drawable/ic_addstorylol"
+        android:padding="4dp"
+         />
+        <TextView
+            android:id="@+id/txt_stories_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/image_stories_add"
+            android:layout_alignStart="@id/image_stories_add"
+            android:layout_alignEnd="@id/image_stories_add"
+            android:gravity="center"
+            android:text="Nick"
+            android:textColor="@color/black"
+            android:textSize="10sp"
+            android:textStyle="normal" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/image_stories"
+            android:layout_width="66dp"
+            android:layout_height="66dp"
+            android:layout_marginLeft="28dp"
+            android:padding="4dp" />
+
+        <TextView
+            android:id="@+id/txt_nick_stories_begin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/image_stories"
+            android:layout_alignStart="@id/image_stories"
+            android:layout_alignEnd="@id/image_stories"
+            android:gravity="center"
+            android:text="Nick"
+            android:textColor="@color/black"
+            android:textSize="10sp"
+            android:textStyle="normal" />
+    </RelativeLayout>
+</LinearLayout>

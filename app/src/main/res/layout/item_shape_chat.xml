@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp">
+
+    <ImageView
+        android:id="@+id/image_profile_shape"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:padding="4dp"
+        android:src="@drawable/ic_user_profile" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/image_profile_shape"
+        android:layout_alignBottom="@id/image_profile_shape"
+        android:layout_marginStart="12dp"
+        android:layout_toRightOf="@id/image_profile_shape"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txt_nick_shape"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Nick"
+            android:textColor="#262626"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/txt_action_shape"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Action"
+            android:textColor="#40000000"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_click_shape"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/image_profile_shape"
+        android:layout_alignBottom="@id/image_profile_shape"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="8dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/shape_button_shape"
+        android:text="Отправить"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+</RelativeLayout>
